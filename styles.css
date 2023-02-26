@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
 }
 
 body {
@@ -20,19 +25,222 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    box-shadow: 0 0 30px #ccc;
 }
 
 .left-side {
     flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 512px;
     border-radius: 15px;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-.right-side {
-    flex: 1;
+.left-title {
+    margin-top: 45px;
+    color: hsl(241, 100%, 89%);
+
+
 }
 
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.circle-number {
+    font-size: 60px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+.circle-sub-number {
+    font-size: 16px;
+    color: #8A7CFF;
+}
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.great-text {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.bottom-paragraph-text {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    max-width: 250px;
+    font-size: 18px;
+}
+
+
+.right-side {
+    flex: 1;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.right-side-title {
+    margin-top: 45px;
+    margin-left: 40px;
+    color: hsl(224, 30%, 27%);
+}
+
+.right-side-list-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item1 {
+    border-radius: 10px;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+
+
+}
+
+.list-item1-inner-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    color: hsl(0, 100%, 67%);
+
+}
+
+.list-item1 p {
+    font-size: 16px;
+}
+
+.list-item1 p span {
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+}
+
+.list-item2 {
+    border-radius: 10px;
+    background-color: hsla(39, 100%, 56%, .1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+
+
+}
+
+.list-item2-inner-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    color: hsl(39, 100%, 56%);
+
+}
+
+.list-item2 p {
+    font-size: 16px;
+}
+
+.list-item2 p span {
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+}
+
+.list-item3 {
+    border-radius: 10px;
+    background-color: hsla(166, 100%, 37%, .1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+
+
+}
+
+.list-item3-inner-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    color: hsl(166, 100%, 37%)
+}
+
+.list-item3 p {
+    font-size: 16px;
+}
+
+.list-item3 p span {
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+}
+
+.list-item4 {
+    border-radius: 10px;
+    background-color: hsla(234, 85%, 45%, .1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+
+
+}
+
+.list-item4-inner-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    color: hsl(234, 85%, 45%)
+}
+
+.list-item4 p {
+    font-size: 16px;
+}
+
+.list-item4 p span {
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+}
+
+.btn {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%)
+}
+
+.btn:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+footer {
+    margin-top: 50px;
+}
 
 .attribution {
     font-size: 11px;
@@ -40,5 +248,6 @@ main {
 }
 
 .attribution a {
+    font-size: 11px;
     color: hsl(228, 45%, 44%);
 }
