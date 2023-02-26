@@ -22,6 +22,16 @@ main {
     flex-direction: row;
 }
 
+.left-side {
+    flex: 1;
+    height: 512px;
+    border-radius: 15px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.right-side {
+    flex: 1;
+}
 
 
 .attribution {
